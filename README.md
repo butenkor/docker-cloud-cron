@@ -1,4 +1,4 @@
-# A Cron Scheduler for Tutum
+# A Cron Scheduler for Docker Cloud
 
 ## Intro
 
@@ -12,14 +12,14 @@ To use you simply need to add a link to each service you wish to schedule and th
 
 ```
 
-You'll also want to make sure you add the `global` role on tutum-cron:
+You'll also want to make sure you add the `global` role on docker-cloud-cron:
 
 ```yaml
   roles:
     - global
 ```
 
-Everything you really need to know is in the `tutum.yml` file, just take a look and you'll get the idea. So just press the button and get going:
+Everything you really need to know is in the `docker-cloud.yml` file, just take a look and you'll get the idea. So just press the button and get going:
 
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
@@ -48,5 +48,3 @@ This scheduler uses [fcron](http://fcron.free.fr/doc/en/fcrontab.5.html) to sche
 The base container uses work originally taken from https://github.com/just-containers/base-alpine credit to <John Regan>john@jrjrtech.com this provides us with the S6 supervisor which this image uses to run cron, dnsmasq and the main run.sh script.
 
 The real base of this image though is [Alpine Linux](https://www.alpinelinux.org/) brought to Docker via [Glider Labs](http://gliderlabs.com/).
-
-[![](https://badge.imagelayers.io/vizzbuzz/tutum-cron.svg)](https://imagelayers.io/?images=vizzbuzz/tutum-cron:latest 'Get your own badge on imagelayers.io')        
