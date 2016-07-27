@@ -12,7 +12,7 @@ To use you simply need to add a link to each service you wish to schedule and th
 
 ```
 
-You'll also want to make sure you add the `global` role on docker-cloud-cron:
+You'll also want to make sure you add the `global` role on cloud-cron:
 
 ```yaml
   roles:
